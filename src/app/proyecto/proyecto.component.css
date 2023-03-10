@@ -1,0 +1,1 @@
+.titulo{ padding: 20px; } @media (max-width:768px){ .fila-proyecto{ width: 100% !important; text-align: center; } } @media(max-width:576px){ .imagenes-wrap { flex-wrap: wrap; justify-content:center !important; } } .difumacion{ box-shadow: 10px 10px 5px rgba(59, 59, 59, 0.979);; }

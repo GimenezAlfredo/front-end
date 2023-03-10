@@ -1,0 +1,37 @@
+body {
+    font-family: 'Montserrat',sans-serif;
+    overflow-x: hidden;
+    background-color:rgb(192, 192, 192);
+    }
+   
+    .carousel-inner {
+        max-height: 39rem;
+    }
+    @media (max-width:768px){
+      #intro  { 
+        width: 90% ¡important ;     
+        }
+        .servicio-fila{
+            width: 100% !important;
+            text-align: center;
+        }
+    }
+    /*Pantalla ANCHA*/
+@media(max-width:1200px){
+    #local{
+        flex-wrap: wrap;
+        padding-top: 30px;
+    }
+    .wrapper{
+        width: 90%;
+        margin: auto;
+        padding-top: 50px;
+    }
+}
+/*Pantalla Sm*/
+@media(max-width:576px){
+    .icono-wrap {
+        flex-wrap: wrap;
+        justify-content:center !important;
+    }
+}

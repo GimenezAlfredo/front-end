@@ -1,0 +1,57 @@
+<div class="row"> 
+  <section class="w-100 border-top border-dark pt-3 ">
+  <div class="row">
+      <h1 class="pt-1 text-center"><b> Hard & Soft Skills </b></h1>
+      <div class="px-4">
+        <button type="button" routerLink="/newskill" class="btn btn-dark" *ngIf="isLogged">Nueva Skill</button>
+    </div>
+
+
+    <div class="text-center col-sm-4 col-md-4 col-lg-4 circulo" *ngFor="let skill of skill">
+        <circle-progress 
+        [percent]="(skill.porcentaje)" 
+        [radius]="90" [imageSrc]="''" 
+        [title]="(skill.nombre)"
+        [titleColor]="'#212F3C'"
+        [showTitle]="true" 
+        [showImage]="false" 
+        [imageHeight]="70" 
+        [imageWidth]="70" 
+        [showUnits]="false"
+        [showSubtitle]="false" 
+        [outerStrokeWidth]="16" 
+        [innerStrokeWidth]="2" 
+        [outerStrokeColor]="'#0011ff6b'"
+        [innerStrokeColor]="'#0000006b'" 
+        [animation]="true" 
+        [animationDuration]="600">
+        </circle-progress>
+
+        <div>
+            <td *ngIf="isLogged">
+                <button class="btn btn-light" routerLink="/editskill/{{skill.id}}">
+                    <i class="bi bi-pencil-fill"></i></button>
+            </td>
+            <td *ngIf="isLogged">
+                <button class="btn btn-danger" (click)="delete(skill.id)">
+                    <i class="bi bi-trash-fill"></i></button>
+            </td>
+        </div>
+        
+    </div>
+</div>
+    
+      <div class="w-50 mx-auto text-center pt-5 imagen-aprender" >
+  <h1 class="p-3 fs-2 border-top border-4"> Interesado en aprender...</h1>
+  <div class="col-sm-12 col-md-12 col-lg-12 aprender-wrap" >
+    <img id="react" width="220" height="230" src="assets/imagenes/react.jpg" class="img-fluid">
+    <img id="tecnologias" width="190" height="205" src="assets/imagenes/python.jpg" class="img-fluid">
+    <img  id="cmasmas" width="195" height="195" src="assets/imagenes/ISO_C++_Logo.svg.png" class="img-fluid">
+    <img  id="tecnologias" width="210" height="210" src="assets/imagenes/ingles3.jpg" class="img-fluid">
+   
+    <div> 
+  </div>
+  </div>
+</div>
+</section>
+</div>

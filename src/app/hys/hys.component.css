@@ -1,0 +1,30 @@
+
+@media (max-width:1200px){
+    .imagen-aprender{
+        width: 100%;
+        text-align: center;
+    }
+    }
+    @media(max-width:576px){
+        .aprender-wrap {
+            flex-wrap: wrap;
+            justify-content:center !important;
+        }
+    }
+    #tecnologias{
+        padding: 15px;
+    }
+    #react{
+        padding:15px;
+        margin-top: -10px;
+    }
+    #cmasmas{
+        margin-top: -30px;
+        padding: 15px;
+    }
+
+    .circulo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }

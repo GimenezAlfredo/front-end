@@ -1,0 +1,3 @@
+# repositorio_FrontEnd
+
+Paso a informar que se debe de abrir el portafolio con dirección a google chrome, es salgo provisorio y más adelante lo iré perfeccionando...

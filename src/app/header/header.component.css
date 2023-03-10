@@ -1,0 +1,4 @@
+.container{width: 100%; display: flex; justify-content: space-between; align-items: center; } #iconos i{ font-size: 45px; margin-right:20px; color: #ffffff; } #iconos{ margin-right: 0.5em; font-weight: bold; } .btn{ margin-bottom: 1em; border-width:medium ; font-weight: bold; } /*RESPONSIVE*/ @media(max-widht:575px){ .container{ flex-direction: column; } .iconos { display:flex; flex-direction: column; align-items:center; } .iconos i{ margin: 0.2em; } }
+
+
+

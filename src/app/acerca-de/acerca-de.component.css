@@ -1,0 +1,1 @@
+#portada{ background:rgb(20, 20, 20); padding: 15px; display: flex; justify-content: center; } #texto{ color: rgb(0, 0, 0); font-weight:500; } @media (max-width:768px){ #intro { width: 90% ¡important ; } .servicio-fila{ width: 100% !important; text-align: center;} }

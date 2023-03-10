@@ -1,0 +1,11 @@
+
+.fila{
+    padding: 20px;
+    
+}
+.texto{
+    color: rgba(255, 255, 255, 0.979);
+}
+h2, h3{
+display: inline;
+}
