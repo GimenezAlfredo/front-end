@@ -23,6 +23,9 @@ import { EditeducacionComponent } from './educacion/editeducacion.component';
 import { EditSkillComponent } from './hys/edit-skill.component';
 import { NewSkillComponent } from './hys/new-skill.component';
 import { EditAcercaDeComponent } from './acerca-de/edit-acerca-de.component';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideStorage,getStorage } from '@angular/fire/storage';
 const appRoutes:Routes=[
   {path:'', component: HomeComponent},
   {path:'login', component: LoginComponent},
@@ -63,7 +66,9 @@ const appRoutes:Routes=[
     NgCircleProgressModule.forRoot({}),
     FormsModule,
     HttpClientModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideStorage(() => getStorage())
   ],
   exports: [RouterModule],
   providers: [interceptorProvider],
